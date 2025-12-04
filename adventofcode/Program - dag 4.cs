@@ -79,7 +79,6 @@ for (var line = 0; line < input.Length; line++)
             //de meest rechtste
             else if (i == input[line].Length - 1)
             {
-                //je wil boven, linksboven, links
                 bool[] allsurrounding = [Boven(input, line, i), Linksboven(input, line, i), Links(input, line, i)];
                 foreach (var a in allsurrounding)
                 {
@@ -139,8 +138,6 @@ for (var line = 0; line < input.Length; line++)
             //alle middelste
             else
             {
-                //je wil linksboven, boven, rechtsboven, links, rechts, linksonder, rechtsonder
-
                 bool[] allsurrounding = [Onder(input, line, i), Linksboven(input, line, i), Rechtsboven(input, line, i), Links(input, line, i), Rechts(input, line, i), Linksonder(input, line, i), Rechtsonder(input, line, i), Boven(input, line, i)];
                 foreach (var a in allsurrounding)
                 {

@@ -10,6 +10,7 @@
   <ItemGroup>
     <Compile Remove="Program - dag 4.cs" />
     <Compile Remove="Program - dag 5.cs" />
+    <Compile Remove="Program - dag 6.cs" />
     <Compile Remove="Program - dag1.cs" />
     <Compile Remove="Program - dag2.cs" />
     <Compile Remove="Program - dag3.cs" />
@@ -18,6 +19,7 @@
   <ItemGroup>
     <None Include="Program - dag 4.cs" />
     <None Include="Program - dag 5.cs" />
+    <None Include="Program - dag 6.cs" />
     <None Include="Program - dag1.cs" />
     <None Include="Program - dag2.cs" />
     <None Include="Program - dag3.cs" />

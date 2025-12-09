@@ -5,6 +5,7 @@ var input = File.ReadAllLines("input.txt");
 
 int startindex = input[0].IndexOf("S");
 int[] oldindexes = [startindex];
+int[] indexesToCount = [];
 
 //kijk elke line of er een punt of een ^ zit op de plek van de index. 
 //is er een punt op elke plek van de indexen. Dan doen we niks en gaan we de volgende regel checken.
@@ -36,6 +37,7 @@ for (int i = 1; i < input.Length; i++)
         newindexes = oldindexes;
     }
     oldindexes = newindexes.Distinct().ToArray();
+    indexesToCount = [.. indexesToCount, splitableindexes.Distinct().ToArray().Length];
     
 }
 
